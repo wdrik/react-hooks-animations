@@ -5,7 +5,7 @@ import { Container } from "./styles";
 export default function Header() {
   return (
     <Container>
-      <h1>IWSS</h1>
+      <h1>IW</h1>
     </Container>
   );
 }
