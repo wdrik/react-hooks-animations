@@ -18,7 +18,7 @@ const defaultOptions = {
 export default function Content() {
   return (
     <Container>
-      <Banner>
+      <Banner id="banner">
         <Lottie options={defaultOptions} width={400} height={400}  />
       </Banner>
     </Container>
