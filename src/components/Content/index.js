@@ -2,9 +2,9 @@ import React from "react";
 
 import Lottie from "react-lottie";
 
-import animation from "./page-animation.json";
+import animation from "../../assets/animations/animation.json";
 
-import { Container } from "./styles";
+import { Container, Banner } from "./styles";
 
 const defaultOptions = {
   loop: true,
@@ -18,43 +18,9 @@ const defaultOptions = {
 export default function Content() {
   return (
     <Container>
-      <div className="App">
-        <Lottie options={defaultOptions} height={240} width={400} />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-        Hello world!
-        <br />
-      </div>
+      <Banner>
+        <Lottie options={defaultOptions} width={400} height={400}  />
+      </Banner>
     </Container>
   );
 }
