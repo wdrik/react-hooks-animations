@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background: #FFF;
-  display: flex;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 400px;
 `;
 
 export const Banner = styled.section`

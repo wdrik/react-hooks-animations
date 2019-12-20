@@ -10,7 +10,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 2;
+  z-index: 9;
 `;
 
 export const Navigation = styled.nav`

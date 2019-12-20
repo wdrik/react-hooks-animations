@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Lottie from "react-lottie";
 
@@ -16,11 +16,18 @@ const defaultOptions = {
 };
 
 export default function Content() {
+
+
   return (
     <Container>
       <Banner id="banner">
         <Lottie options={defaultOptions} width={400} height={400}  />
       </Banner>
+
+      <Banner id="banner">
+        <Lottie options={defaultOptions} width={400} height={400}  />
+      </Banner>
+
     </Container>
   );
 }

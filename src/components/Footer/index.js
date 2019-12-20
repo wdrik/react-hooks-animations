@@ -1,10 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import { Container } from "./styles";
 
+import anime from "animejs";
+
 export default function Footer() {
+  const [x, setX] = useState(20)
+
   useEffect(() => {
-    console.log('component footer did mount!')
+    function handleAnime() {
+      anime({
+        targets: '#copy',
+        translateX: function() {
+          return anime.random(-250, 250);
+        },
+        direction: 'alternate',
+        easing: 'steps(5)',
+        duration: 750,
+        complete: handleAnime
+      });
+    }
+
+    handleAnime();
   }, []);
 
   function teste(e) {
@@ -21,7 +38,7 @@ export default function Footer() {
           <input type="text" placeholder="E-mail" />
           <input type="text" placeholder="Company" />
 
-          <textarea rows="5" cols="33">
+          <textarea rows="5" cols="33" value="">
             It was a dark and stormy night...
           </textarea>
 
