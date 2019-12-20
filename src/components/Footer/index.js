@@ -10,13 +10,18 @@ export default function Footer() {
   useEffect(() => {
     function handleAnime() {
       anime({
-        targets: '#copy',
+        targets: '#copy span',
         translateX: function() {
           return anime.random(-250, 250);
         },
         direction: 'alternate',
+        backgroundColor: ['#FFF', '#333', 'rgb(205, 0, 0)', '#7159c1'],
+        borderRadius: ['0%', '10%'],
         easing: 'steps(5)',
-        duration: 750,
+        duration: 1200,
+        scale: function() {
+          return anime.random(-1, 2);
+        },
         complete: handleAnime
       });
     }
