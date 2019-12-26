@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <Header />
-      <Loader />
       <Content />
+      <Loader />
       <Footer />
 
       <GlobalStyle />
