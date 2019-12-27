@@ -38,21 +38,19 @@ export default function Circle(){
 
   const onMouseMove = e => {
 
-    // TweenLite.to(compRef.current, 1, {
-    //   width: `${e.clientX}px`, height:`${e.clientY}px`
-    // });
-
     TweenLite.to(compRef.current, 0.2, {
       x: - ((e.clientX - window.innerWidth / 2) / 50),
-      y: - ((e.clientY - window.innerHeight / 2) / 50)
+      y: - ((e.clientY - window.innerHeight / 2) / 50),
+      width: `${e.clientX - 100}px`
+
     });
 
     TweenLite.to(compRef2.current, 0.2, {
-    x: - ((e.clientX - window.innerWidth / 2) / -50),
-    y: - ((e.clientY - window.innerHeight / 2) / -50)
+      x: - ((e.clientX - window.innerWidth / 2) / -50),
+      y: - ((e.clientY - window.innerHeight / 2) / -50),
+      width: `${e.clientX - 100}px`
     });
   };
-
 
   return (
     <div style={animatedCompStyleWrapper}>
