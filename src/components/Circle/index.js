@@ -5,12 +5,14 @@ const animatedCompStyle = {
   width: "50px",
   height: "50px",
   backgroundColor: "#7159c1",
+  boxShadow: '2px 2px 5px 0px rgba(0,0,0,0.75)'
 };
 
 const animatedCompStyle2 = {
     width: "50px",
     height: "50px",
     backgroundColor: "lightblue",
+    boxShadow: '2px 2px 5px 0px rgba(0,0,0,0.75)'
   };
 
 const animatedCompStyleWrapper = {
@@ -41,21 +43,21 @@ export default function Circle(){
     // });
 
     TweenLite.to(compRef.current, 0.2, {
-      x: - ((e.clientX - window.innerWidth / 2) / 10),
-      y: - ((e.clientY - window.innerHeight / 2) / 10)
+      x: - ((e.clientX - window.innerWidth / 2) / 50),
+      y: - ((e.clientY - window.innerHeight / 2) / 50)
     });
 
     TweenLite.to(compRef2.current, 0.2, {
-    x: - ((e.clientX - window.innerWidth / 2) / -110),
-    y: - ((e.clientY - window.innerHeight / 2) / -110)
+    x: - ((e.clientX - window.innerWidth / 2) / -50),
+    y: - ((e.clientY - window.innerHeight / 2) / -50)
     });
   };
 
 
   return (
     <div style={animatedCompStyleWrapper}>
-      <div style={animatedCompStyle} ref={compRef} />
       <div style={animatedCompStyle2} ref={compRef2} />
+      <div style={animatedCompStyle} ref={compRef} />
     </div>
   ) 
 };
