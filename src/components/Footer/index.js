@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 import { Container } from "./styles";
 
 import anime from "animejs";
 
 export default function Footer() {
-  const [x, setX] = useState(20)
-
   useEffect(() => {
     function handleAnime() {
       anime({
