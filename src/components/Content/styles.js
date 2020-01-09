@@ -11,8 +11,8 @@ export const Banner = styled.section`
   width: 100%;
   height: auto;
   min-height: 300px;
+  padding: 50px 0;
   background: #ebebeb;
-  padding: 0 100px;
   display: flex;
   justify-content: center;
   align-items: center;
