@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
-import { Container } from "./styles";
+import { Container } from './styles';
 
-import anime from "animejs";
+import anime from 'animejs';
 
 export default function Footer() {
   useEffect(() => {
@@ -50,7 +50,13 @@ export default function Footer() {
       </section>
 
       <section id="copy">
-        <span>Made with <span role="img" aria-label="sheep">❤️</span> by IWSS &copy; {new Date().getFullYear()} </span>
+        <span>
+          Made with{' '}
+          <span role="img" aria-label="sheep">
+            ❤️
+          </span>{' '}
+          by IWSS &copy; {new Date().getFullYear()}{' '}
+        </span>
       </section>
     </Container>
   );

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
@@ -21,7 +21,7 @@ export const Container = styled.div`
       flex-direction: column;
       align-items: center;
 
-      input[type="text"] {
+      input[type='text'] {
         min-width: 300px;
         border: 1px solid #ebebeb;
         margin-bottom: 10px;

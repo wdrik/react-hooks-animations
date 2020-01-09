@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from "react";
-import { TweenMax } from "gsap";
+import React, { useRef, useEffect } from 'react';
+import { TweenMax } from 'gsap';
 
 export default function Loader() {
   const blue = useRef(null);
@@ -8,19 +8,9 @@ export default function Loader() {
   const green = useRef(null);
 
   useEffect(() => {
-    TweenMax.fromTo(
-      [blue.current, yellow.current],
-      0.5,
-      { y: 18 },
-      { y: -18, yoyo: true, repeat: -1 }
-    );
+    TweenMax.fromTo([blue.current, yellow.current], 0.5, { y: 18 }, { y: -18, yoyo: true, repeat: -1 });
 
-    TweenMax.fromTo(
-      [red.current, green.current],
-      0.5,
-      { y: -18 },
-      { y: 18, repeat: -1, yoyo: true }
-    );
+    TweenMax.fromTo([red.current, green.current], 0.5, { y: -18 }, { y: 18, yoyo: true, repeat: -1 });
   }, []);
 
   return (
@@ -31,4 +21,4 @@ export default function Loader() {
       <circle ref={green} cx="133.4" cy="16.6" r="16.1" fill="#009e52" />
     </svg>
   );
-};
+}

@@ -1,19 +1,19 @@
-import React, { useEffect, useRef } from "react";
-import { TweenLite } from "gsap";
+import React, { useEffect, useRef } from 'react';
+import { TweenLite } from 'gsap';
 
 const animatedCompStyle = {
-  width: "50px",
-  height: "50px",
-  backgroundColor: "#7159c1",
+  width: '50px',
+  height: '50px',
+  backgroundColor: '#7159c1',
   boxShadow: '2px 2px 5px 0px rgba(0,0,0,0.75)'
 };
 
 const animatedCompStyle2 = {
-    width: "50px",
-    height: "50px",
-    backgroundColor: "lightblue",
-    boxShadow: '2px 2px 5px 0px rgba(0,0,0,0.75)'
-  };
+  width: '50px',
+  height: '50px',
+  backgroundColor: 'lightblue',
+  boxShadow: '2px 2px 5px 0px rgba(0,0,0,0.75)'
+};
 
 const animatedCompStyleWrapper = {
   zIndex: 99,
@@ -21,33 +21,31 @@ const animatedCompStyleWrapper = {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  width: "100%",
-  height: "300px",
-  backgroundColor: "#ebebeb",
+  width: '100%',
+  height: '300px',
+  backgroundColor: '#ebebeb'
 };
 
-export default function Circle(){
+export default function Circle() {
   const compRef = useRef(null);
   const compRef2 = useRef(null);
 
   useEffect(() => {
-    window.addEventListener("mousemove", onMouseMove);
-  
-    return () => window.removeEventListener("mousemove", onMouseMove);
+    window.addEventListener('mousemove', onMouseMove);
+
+    return () => window.removeEventListener('mousemove', onMouseMove);
   });
 
   const onMouseMove = e => {
-
     TweenLite.to(compRef.current, 0.2, {
-      x: - ((e.clientX - window.innerWidth / 2) / 50),
-      y: - ((e.clientY - window.innerHeight / 2) / 50),
+      x: -((e.clientX - window.innerWidth / 2) / 50),
+      y: -((e.clientY - window.innerHeight / 2) / 50),
       width: `${e.clientX - 100}px`
-
     });
 
     TweenLite.to(compRef2.current, 0.2, {
-      x: - ((e.clientX - window.innerWidth / 2) / -50),
-      y: - ((e.clientY - window.innerHeight / 2) / -50),
+      x: -((e.clientX - window.innerWidth / 2) / -50),
+      y: -((e.clientY - window.innerHeight / 2) / -50),
       width: `${e.clientX - 100}px`
     });
   };
@@ -57,5 +55,5 @@ export default function Circle(){
       <div style={animatedCompStyle2} ref={compRef2} />
       <div style={animatedCompStyle} ref={compRef} />
     </div>
-  ) 
-};
+  );
+}

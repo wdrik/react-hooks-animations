@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
@@ -22,7 +22,7 @@ export const Navigation = styled.nav`
       margin-left: 10px;
 
       a {
-        color: #FFF;
+        color: #fff;
         text-decoration: none;
       }
     }

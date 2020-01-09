@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #FFF;
+  background: #fff;
   z-index: 2;
   position: relative;
   margin-bottom: 400px;
