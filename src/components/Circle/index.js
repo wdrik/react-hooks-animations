@@ -5,14 +5,16 @@ const animatedCompStyle = {
   width: '50px',
   height: '50px',
   backgroundColor: '#7159c1',
-  boxShadow: '2px 2px 5px 0px rgba(0,0,0,0.75)'
+  boxShadow: '2px 2px 5px 0px rgba(0,0,0,0.75)',
+  borderRadius: '50%'
 };
 
 const animatedCompStyle2 = {
   width: '50px',
   height: '50px',
   backgroundColor: 'lightblue',
-  boxShadow: '2px 2px 5px 0px rgba(0,0,0,0.75)'
+  boxShadow: '2px 2px 5px 0px rgba(0,0,0,0.75)',
+  borderRadius: '50%'
 };
 
 const animatedCompStyleWrapper = {

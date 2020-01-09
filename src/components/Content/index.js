@@ -8,7 +8,8 @@ import { Container, Banner } from './styles';
 
 import Loader from '../Loader';
 import Circle from '../Circle';
-import WrongAkram from '../WrongAkram';
+import WrongAkram1 from '../WrongAkram1';
+import WrongAkram2 from '../WrongAkram2';
 
 const defaultOptions = {
   loop: true,
@@ -35,7 +36,11 @@ export default function Content() {
       </Banner>
 
       <Banner>
-        <WrongAkram />
+        <WrongAkram1 />
+      </Banner>
+
+      <Banner>
+        <WrongAkram2 />
       </Banner>
     </Container>
   );

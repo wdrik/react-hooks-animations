@@ -9,9 +9,10 @@ export const Container = styled.div`
 
 export const Banner = styled.section`
   width: 100%;
-  height: 400px;
+  height: auto;
+  min-height: 300px;
   background: #ebebeb;
-  padding: 0 15px;
+  padding: 0 100px;
   display: flex;
   justify-content: center;
   align-items: center;
